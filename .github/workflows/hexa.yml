@@ -22,7 +22,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install
       run: |
-        npm install
+        npm --prefix "D:\home\site\wwwroot\SleepDiary" install
     - name: npm build, and deploy
       env:
         AZURE_SERVICE_PRINCIPAL_ID: ${{ secrets.AZURE_SERVICE_PRINCIPAL_ID }}
