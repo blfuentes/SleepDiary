@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - sleepdiary
 on:
   push:
     branches:
-      - dev
+      - master
 
 jobs:
   build-and-deploy:
