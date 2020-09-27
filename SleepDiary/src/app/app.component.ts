@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import {MatSidenav} from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SleepDiary';
+  @ViewChild('sidenav') sidenav: MatSidenav;
+
+  title = 'Sleep Diary';
+  shouldRun = true;
+  reason = '';
+
+  close(reason: string): void {
+    this.reason = reason;
+    this.sidenav.close();
+  }
 }
