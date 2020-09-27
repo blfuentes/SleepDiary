@@ -1,0 +1,9 @@
+{
+  "subscription": {
+    "name": "Pago por uso"
+  },
+  "project": {
+    "location": "westeurope",
+    "name": "SleepDiary"
+  }
+}
