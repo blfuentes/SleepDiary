@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SleepDiary"
+    }
+  },
+  "defaultProject": "SleepDiary",
+  "cli": {
+    "analytics": "e5223bd1-b3cc-40d8-b757-aa2e875fee5e"
+  }
 }
