@@ -20,16 +20,16 @@ jobs:
       with:
         node-version: '12.13.0'
 
-    - name: npm install, build
+    - name: npm install, build, and test
       run: |
         npm install
         npm run build --if-present
-        
+        npm run test --if-present
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'sleepdiary'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_bf57a6d223e44c5da989ae40998e0f38 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_beaddba1c1ab448cbcadd8c8196f6aef }}
         package: .
